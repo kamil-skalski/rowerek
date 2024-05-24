@@ -30,3 +30,5 @@ Twoim zadaniem jest zaimplementowanie metod w module dostępności `availability
 Po prawidłowej implementacji wszystkie testy powinny świecić się na zielono :)
 
 Powodzenia!
+
+# Dziękuję za udział w szkoleniu i mam nadzieję, że do usłyszenia! 🤝🚀
