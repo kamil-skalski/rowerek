@@ -15,6 +15,7 @@ public class MaintenanceService {
     private final MaintenanceRepository maintenanceRepository;
     private final BikeAvailabilityService bikeAvailabilityService;
 
+    @Transactional
     public MaintenanceId addMaintenance(CreateMaintenanceDto createDto) {
         bikeAvailabilityService.takeBike
                 (createDto.bikeId(), Instant.now(), Instant.MAX, "Maintenance");

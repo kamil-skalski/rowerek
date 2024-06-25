@@ -1,5 +1,6 @@
 package pl.rowerek.reservation;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.rowerek.availability.BikeAvailabilityService;
@@ -19,6 +20,7 @@ public class ReservationService {
     private final CustomerService customerService;
     private final BikeAvailabilityService bikeAvailabilityService;
 
+    @Transactional
     ReservationId reserve(BikeId bikeId, CustomerId customerId, Instant when) {
         customerService.checkCustomerExists(customerId);
 
